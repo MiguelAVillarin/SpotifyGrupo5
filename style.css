@@ -1,6 +1,47 @@
-:root{
+
+:root {
     --color-cuerpo: #88b7b5;
     --color-fondo: #310a31;
     --color-borde: #847996;
     --color-negro: #1a1913;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px;
+    width: 200px;
+    height: 350px;
+    background-color: #310a31;
+    
+}
+.container:hover {
+    background-color: #847996;
+ }
+ 
+.img0 img {
+    padding: 25px;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    /* Define el ancho máximo de la imagen */
+}
+
+.string {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+h3 {
+    margin: 5px;
+    color: white;
+
+}
+p {
+    color: white;
+    text-align: center;
 }
