@@ -1,6 +1,84 @@
-:root{
+:root {
     --color-cuerpo: #88b7b5;
     --color-fondo: #310a31;
     --color-borde: #847996;
     --color-negro: #1a1913;
+}
+
+body{
+    background-color: var(--color-fondo);
+}
+
+.elementoBuscar {
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    color: white;
+    padding: 1vw;
+    background-color: cornflowerblue;
+    overflow: hidden;
+}
+
+.elementoBuscarText {
+    font-weight: 1000;
+    font-size: xx-large;
+    position: absolute;
+    top: -10%;
+}
+
+.elementoBuscarIMG {
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+    rotate: 25deg;
+    width: 100px;
+    height: 100px;
+    -webkit-box-shadow: -12px 17px 20px -5px rgba(0, 0, 0, 0.72);
+    box-shadow: -12px 17px 20px -5px rgba(0, 0, 0, 0.72);
+}
+
+.elementoBuscar:hover>.elementoBuscarIMG {
+    animation: scale-up-center 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: buscarIMGMove 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite;
+}
+
+.elementoBuscar:hover>.elementoBuscarText {
+    animation: buscarTextShadow 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite;
+}
+
+.elementoBuscar:hover {
+    animation: input_shadow 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    cursor: pointer;
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+@keyframes buscarTextShadow {
+    50% {
+        text-shadow: -5px 5px 0px var(--color-cuerpo), -7px 7px 0px  var(--color-cuerpo), -10px 10px 0px  var(--color-cuerpo);
+    }
+}
+
+@keyframes buscarIMGMove {
+    50% {
+        transform: translateY(1vh);
+    }
+}
+
+@keyframes input_shadow {
+    100% {
+        box-shadow: inset 1px -1px 27px 2px rgba(0, 0, 0, 0.68);
+    }
 }
