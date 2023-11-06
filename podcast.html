@@ -6,14 +6,21 @@
     <title>Podcast</title>
     <style>
         body {
-            background-color: #1a1913;
+            /*background-color: #310a31;*/
+            background-image: url(./imagenes/foto.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%;
+            background-attachment: fixed;
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
 
+
+
         .container {
-            background-color: #1a1913;
+            /*background-color: #310a31;*/
             display: flex;
             flex-wrap: nowrap;
             justify-content: space-around;
@@ -21,19 +28,32 @@
         }
 
         .product {
-            background-color: #222;
+            background-color: #310a31;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             margin: 10px;
+            margin-top: -20px;
             padding: 20px;
             text-align: center;
             width: 18%; 
             box-sizing: border-box; 
             border-radius: 15px;
-            transition: transform 0.3s; 
+            transition: background-color 0.3s;
         }
 
-        h1 {
+        .product:hover{
+            background-color: #666;
+        }
+
+        .name {
             color: #fff;
+            margin-top: 30px;
+            margin-left: 35px;
+            font-size: 25px;
+        }
+
+        .name:hover{
+            text-decoration: underline;
+            cursor: pointer;
         }
 
         .product img {
@@ -41,108 +61,137 @@
             border-radius: 5px;
         }
 
-        h2 {
+        .nombres {
             color: #fff;
             font-size: 18px;
             text-align: left;
+
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
 
-        p {
+        .texto {
             color: #ccc;
             font-size: 14px;
             text-align: left;
         }
+
+        .encabezado {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .mostrar{
+            margin-right: 35px;
+            color: #666;
+        }
+
+        .mostrar:hover{
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
     </style>
 </head>
 <body>
-
-    <h1>Podcasts más escuchados</h1>
+    <div class="encabezado">
+        <div><h1 class="name">Podcasts más escuchados</h1></div>
+        <div><p class="mostrar">Mostrar todo</p></div>
+    </div>
 
     <div class="container">
         <div class="product">
             <img src="./imagenes/perfectam.jfif" alt="Producto 1">
-            <h2>perfectam(i)ente</h2>
-            <p>Aretha Fusté</p>
+            <h2 class="nombres">perfectam(i)ente</h2>
+            <p class="texto">Aretha Fusté</p>
         </div>
         <div class="product">
             <img src="./imagenes/vino.jfif" alt="Producto 2">
-            <h2>Podcast 2</h2>
-            <p>Descripción del podcast 2.</p>
+            <h2 class="nombres">Tómatelo con Vino</h2>
+            <p class="texto">Maria F. Rubies ; Ro Irisarri</p>
         </div>
         <div class="product">
             <img src="./imagenes/wild.jfif" alt="Producto 3">
-            <h2>Podcast 3</h2>
-            <p>Descripción del podcast 3.</p>
+            <h2 class="nombres">The Wild Project</h2>
+            <p class="texto">Jordi Wild</p>
         </div>
         <div class="product">
             <img src="./imagenes/marian.jfif" alt="Producto 4">
-            <h2>Podcast 4</h2>
-            <p>Descripción del podcast 4.</p>
+            <h2 class="nombres">El podcast de Marian Rojas Estapé</h2>
+            <p class="texto">Marian Rojas Estapé</p>
         </div>
         <div class="product">
             <img src="./imagenes/world.jfif" alt="Producto 5">
-            <h2>Podcast 5</h2>
-            <p>Descripción del podcast 5.</p>
+            <h2 class="nombres">WORLDCA$T</h2>
+            <p class="texto">WORLDCA$T</p>
         </div>
     </div>
 
-    <h1>Últimos estrenos</h1>
+    <div class="encabezado">
+        <div><h1 class="name">Que está pasando en el mundo</h1></div>
+        <div><p class="mostrar">Mostrar todo</p></div>
+    </div>
+
+    <div class="container">
+        <div class="product">
+            <img src="./imagenes/am.jfif" alt="Producto 1">
+            <h2 class="nombres">AM</h2>
+            <p class="texto">Spotify Studios</p>
+        </div>
+        <div class="product">
+            <img src="./imagenes/elpais.jfif" alt="Producto 2">
+            <h2 class="nombres">Hoy en EL PAÍS</h2>
+            <p class="texto">PAÍS</p>
+        </div>
+        <div class="product">
+            <img src="./imagenes/ser.jfif" alt="Producto 3">
+            <h2 class="nombres">Las noticias de la SER</h2>
+            <p class="texto">SER Podcast</p>
+        </div>
+        <div class="product">
+            <img src="./imagenes/informativo.jfif" alt="Producto 4">
+            <h2 class="nombres">Informativo Matinal Express</h2>
+            <p class="texto">angel</p>
+        </div>
+        <div class="product">
+            <img src="./imagenes/orden.jfif" alt="Producto 5">
+            <h2 class="nombres">El orden mundial en Julio en la onda</h2>
+            <p class="texto">OndaCero</p>
+        </div>
+    </div>
+
+    <div class="encabezado">
+        <div><h1 class="name">Categorías</h1></div>
+        <div><p class="mostrar">Mostrar todo</p></div>
+    </div>
 
     <div class="container">
         <div class="product">
             <img src="https://via.placeholder.com/200" alt="Producto 1">
-            <h2>Podcast 1</h2>
-            <p>Descripción del podcast 1.</p>
+            <h2 class="nombres">Podcast 1</h2>
+            <p class="texto">Descripción del podcast 1.</p>
         </div>
         <div class="product">
             <img src="https://via.placeholder.com/200" alt="Producto 2">
-            <h2>Podcast 2</h2>
-            <p>Descripción del podcast 2.</p>
+            <h2 class="nombres">Podcast 2</h2>
+            <p class="texto">Descripción del podcast 2.</p>
         </div>
         <div class="product">
             <img src="https://via.placeholder.com/200" alt="Producto 3">
-            <h2>Podcast 3</h2>
-            <p>Descripción del podcast 3.</p>
+            <h2 class="nombres">Podcast 3</h2>
+            <p class="texto">Descripción del podcast 3.</p>
         </div>
         <div class="product">
             <img src="https://via.placeholder.com/200" alt="Producto 4">
-            <h2>Podcast 4</h2>
-            <p>Descripción del podcast 4.</p>
+            <h2 class="nombres">Podcast 4</h2>
+            <p class="texto">Descripción del podcast 4.</p>
         </div>
         <div class="product">
             <img src="https://via.placeholder.com/200" alt="Producto 5">
-            <h2>Podcast 5</h2>
-            <p>Descripción del podcast 5.</p>
-        </div>
-    </div>
-
-    <h1>Categorías</h1>
-
-    <div class="container">
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="Producto 1">
-            <h2>Podcast 1</h2>
-            <p>Descripción del podcast 1.</p>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="Producto 2">
-            <h2>Podcast 2</h2>
-            <p>Descripción del podcast 2.</p>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="Producto 3">
-            <h2>Podcast 3</h2>
-            <p>Descripción del podcast 3.</p>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="Producto 4">
-            <h2>Podcast 4</h2>
-            <p>Descripción del podcast 4.</p>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/200" alt="Producto 5">
-            <h2>Podcast 5</h2>
-            <p>Descripción del podcast 5.</p>
+            <h2 class="nombres">Podcast 5</h2>
+            <p class="texto">Descripción del podcast 5.</p>
         </div>
     </div>
 </body>
