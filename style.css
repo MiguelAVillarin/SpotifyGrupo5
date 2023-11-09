@@ -3,9 +3,10 @@
     --color-fondo: #310a31;
     --color-borde: #847996;
     --color-negro: #1a1913;
-    --margin-sidebar:24vw;
+    --margin-sidebar: 24vw;
 }
-#sidebar{
+
+#sidebar {
     background-color: var(--color-fondo);
     color: white;
     width: var(--margin-sidebar);
@@ -17,17 +18,17 @@
     left: 0;
 }
 
-.iconSpotify{
+.iconSpotify {
     width: 2vw;
 }
 
-.iconTextSpotify{
+.iconTextSpotify {
     display: flex;
     justify-content: center;
     gap: 0.5vw;
 }
 
-.contenidoPag{
+.contenidoPag {
     margin-left: var(--margin-sidebar);
     background-image: url(img/fondo.jpeg);
     background-repeat: no-repeat;
@@ -35,27 +36,73 @@
     background-position: 50%;
     background-attachment: fixed;
 }
-.sideBarText{
-    font-size: xx-larger;
+
+.sideBarText {
+    font-size: 20px;
+    margin-left: 1vw;
+    gap: 20px;
 }
-.sideBarOptions{
+
+.iconSideBar{
+    width: 1.5vw;
+}
+
+.sideBarText:active {
+    filter: brightness(80%);
+}
+
+.sideBarOptions {
     background-color: var(--color-borde);
     padding: 2vh;
     margin: 1vw;
-    border-radius: 20px;
+    border-radius: 10px;
+    animation: 1s ease-out 0s 1 sidebarAnimation;
 }
-.sideBarBiblioteca{
-    border-radius: 20px;
+
+.sideBarBiblioteca {
+    border-radius: 10px;
     margin: 1vw;
     background-color: var(--color-borde);
     padding: 2vh;
+    animation: 1s ease-out 0s 1 sidebarAnimation;
 }
-body{
+
+.sideBarIMGAlbum{
+    width: 12vw;
+    height: auto;
+}
+
+.sideBarPregunta{
+    gap: 20px;
+}
+
+.sideBarPregunta>.sideBarBibliotecaElementos{
+    padding: 1vw;
+}
+
+.sideBarBibliotecaElementos{
+    margin-left: 1vw;
+    background-color: var(--color-fondo);
+    border-radius: 15px;
+    padding: 1%;
+}
+
+@keyframes sidebarAnimation {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+body {
     display: flex;
     margin: 0;
 }
 
-.bucarCuerpo{
+.bucarCuerpo {
     display: flex;
     flex-wrap: wrap;
 }
@@ -119,7 +166,7 @@ body{
 
 @keyframes buscarTextShadow {
     50% {
-        text-shadow: -5px 5px 0px var(--color-cuerpo), -7px 7px 0px  var(--color-cuerpo), -10px 10px 0px  var(--color-cuerpo);
+        text-shadow: -5px 5px 0px var(--color-cuerpo), -7px 7px 0px var(--color-cuerpo), -10px 10px 0px var(--color-cuerpo);
     }
 }
 
@@ -137,21 +184,21 @@ body{
 
 /* Works on Firefox */
 * {
-    scrollbar-width: thin;
+    scrollbar-width: 20px;
     scrollbar-color: var(--color-borde) var(--color-fondo);
-  }
-  
-  /* Works on Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
     width: 20px;
-  }
-  
-  *::-webkit-scrollbar-track {
+}
+
+*::-webkit-scrollbar-track {
     background: var(--color-fondo);
-  }
-  
-  *::-webkit-scrollbar-thumb {
+}
+
+*::-webkit-scrollbar-thumb {
     background-color: var(--color-borde);
     border-radius: 20px;
     border: 3px solid var(--color-fondo);
-  }
+}
