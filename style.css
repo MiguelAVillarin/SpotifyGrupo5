@@ -101,7 +101,7 @@ body{
 }
 
 .elementoBuscar:hover {
-    animation: input_shadow 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: input_shadowBuscar 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     cursor: pointer;
 }
 
@@ -129,8 +129,29 @@ body{
     }
 }
 
-@keyframes input_shadow {
+@keyframes input_shadowBuscar {
     100% {
         box-shadow: inset 1px -1px 27px 2px rgba(0, 0, 0, 0.68);
     }
 }
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-borde) var(--color-fondo);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: var(--color-fondo);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--color-borde);
+    border-radius: 20px;
+    border: 3px solid var(--color-fondo);
+  }
