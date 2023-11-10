@@ -6,9 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Menu</title>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script defer>
+        $(function () {
+            $("#sidebar").load("sidebar.html");
+        });
+    </script>
 </head>
 
-<body class="body-inicio">
+<body>
+    <div id="sidebar"></div>
+    <div class="contenidoPag">
     <div class="header-inicio">
         <h1><a class="h1-header" href="#">Listas de Spotify</a></h1>
         <p><a class="p-header" href="#">Mostrar todos</a></p>
@@ -111,6 +119,7 @@
             <include src="./footer.html"></include>
             <script src="https://unpkg.com/htmlincludejs"></script>       
     </footer> 
+</div>
 </body>
 
 </html>
