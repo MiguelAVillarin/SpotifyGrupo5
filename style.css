@@ -47,8 +47,13 @@
     width: 1.5vw;
 }
 
-.sideBarText:active {
-    filter: brightness(80%);
+.sideBarText:hover {
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 .sideBarOptions {
