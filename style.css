@@ -290,17 +290,15 @@ body {
     cursor: pointer;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
+
 
 .body-inicio {    display: flex;
     align-content: flex-end;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    background-color: #88b7b5;
+   background-image: url(imagenes/foto.jpg);
+   background-size: 100% 100%;
 
 }
 .header-inicio {
@@ -324,7 +322,7 @@ body {
 
 .p-header {
    margin-top: 50px;
-    color: rgb(77, 74, 74);
+    color:#88b7b5;
     text-decoration: none;
 }
 
@@ -442,7 +440,7 @@ ul.lista li {
 /* Estilos de los enlaces */
 a {
     text-decoration: none; /* Elimina el subrayado predeterminado */   
-    color: rgb(77, 74, 74);
+    color: #88b7b5;
     transition: text-decoration 0.3s; /* Agrega una transición para suavizar el efecto */
 }
 
