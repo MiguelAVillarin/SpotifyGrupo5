@@ -40,6 +40,10 @@
     background-size: cover;
     background-position: 50%;
     background-attachment: fixed;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    margin-left: var(--margin-sidebar);
+    padding: 0;
 }
 
 .sideBarText {
@@ -211,12 +215,6 @@ body {
     background-color: var(--color-borde);
     border-radius: 20px;
     border: 3px solid var(--color-fondo);
-}
-=======
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    margin: 0;
-    margin-left: var(--margin-sidebar);
-    padding: 0;
 }
 
 .podcastContainer {
