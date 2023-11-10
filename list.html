@@ -12,17 +12,17 @@
 
 			}
 
-			p {
+			.letras {
 				font-size: 18px;
 			}
 
-			html {
+			.todo{
 				display: block;
 			}
 
-			header {
+			.cabesa {
 				color: #fff;
-				background-image: url(foto.jpg);
+				background-image: url(imagenes/foto.jpg);
 				background-size: cover;
 				height: 30%;
 				width: 100%;
@@ -30,8 +30,8 @@
 				flex-direction: column;
 			}
 
-			main {
-				background-image: url(foto.jpg);
+			.cuerpaso {
+				background-image: url(imagenes/foto.jpg);
 				background-size: 100% 100%;
 				height: 700px;
 				width: 100%;
@@ -60,11 +60,11 @@
 				transition: background-color 0.3s ease;
 				cursor: pointer;
 			}
-			
+
 			td:nth-child(2):hover,
 			td:nth-child(2):hover~td {
 				background-color: #621b5f;
-				
+
 			}
 
 
@@ -149,185 +149,193 @@
 				margin-top: 80px;
 			}
 
-			footer {
+			.piess {
 				background-color: #310a31;
 				color: white;
 				padding: 10px;
 				text-align: center;
 			}
 		</style>
+
 	</head>
 
-	<body>
-		<header>
-			<div>
-				<include src="./nav.html"></include>
-				<script src="https://unpkg.com/htmlincludejs"></script>
-			</div>
-
-			<div class="segunda-parte">
-				<div class="imagen-cabecera">
-					<img src="Eminem.jpg" alt="Eminem">
+	<body class="todo">
+		
+		<div>
+			
+			<header class="cabesa">
+				<div>
+					<include src="./nav.html"></include>
+					<script src="https://unpkg.com/htmlincludejs"></script>
 				</div>
-				<div class="texto">
-					<div class="interior-texto">
-						<p>Lista</p>
-						<h1>Eminem: Best Of The Best</h1>
-						<p>testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è
-							considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo
-							tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione.</p>
 
-						<p class="marginado">È universalmente riconosciuto che un lettore che osserva il layout di una
-							pagina viene
-							distratto dal contenuto testuale se questo è</p>
+				<div class="segunda-parte">
+					<div class="imagen-cabecera">
+						<img src="imagenes/Eminem.jpg" alt="Eminem">
 					</div>
+					<div class="texto">
+						<div class="interior-texto">
+							<p class="letras">Lista</p>
+							<h1>Eminem: Best Of The Best</h1>
+							<p class="letras">testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è
+								considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo
+								tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione.
+							</p>
 
+							<p class="marginado">È universalmente riconosciuto che un lettore che osserva il layout di
+								una
+								pagina viene
+								distratto dal contenuto testuale se questo è</p>
+						</div>
+
+					</div>
 				</div>
-			</div>
 
-		</header>
-		<main>
-			<table>
-				<tr>
-					<th>#</th>
-					<th>Título</th>
-					<th>Álbum</th>
-					<th>Fecha añadida</th>
-					<th>Duración</th>
-				</tr>
-				<tr>
-					<td>
-						<p>1</p>
-					</td>
-					<td class="titulo">
-						<p>Canción 1</p>
-					</td>
-					<td class="artista">
-						<p>Álbum 1</p>
-					</td>
-					<td>
-						<p>Fecha 1</p>
-					</td>
-					<td>
-						<p>Duración 1</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<p>2</p>
-					</td>
-					<td class="titulo">
-						<p>Canción 2</p>
-					</td>
-					<td class="artista">
-						<p>Álbum 2</p>
-					</td>
-					<td>
-						<p>Fecha 2</p>
-					</td>
-					<td>
-						<p>Duración 2</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<p>3</p>
-					</td>
-					<td class="titulo">
-						<p>Canción 3</p>
-					</td>
-					<td class="artista">
-						<p>Álbum 3</p>
-					</td>
-					<td>
-						<p>Fecha 3</p>
-					</td>
-					<td>
-						<p>Duración 3</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<p>4</p>
-					</td>
-					<td class="titulo">
-						<p>Canción 4</p>
-					</td>
-					<td class="artista">
-						<p>Álbum 4</p>
-					</td>
-					<td>
-						<p>Fecha 4</p>
-					</td>
-					<td>
-						<p>Duración 4</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<p>5</p>
-					</td>
-					<td class="titulo">
-						<p>Canción 5</p>
-					</td>
-					<td class="artista">
-						<p>Álbum 5</p>
-					</td>
-					<td>
-						<p>Fecha 5</p>
-					</td>
-					<td>
-						<p>Duración 5</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<p>6</p>
-					</td>
-					<td class="titulo">
-						<p>Canción 6</p>
-					</td>
-					<td class="artista">
-						<p>Álbum 6</p>
-					</td>
-					<td>
-						<p>Fecha 6</p>
-					</td>
-					<td>
-						<p>Duración 6</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<p>7</p>
-					</td>
-					<td class="titulo">
-						<p>Canción 7</p>
-					</td>
-					<td class="artista">
-						<p>Álbum 7</p>
-					</td>
-					<td>
-						<p>Fecha 7</p>
-					</td>
-					<td>
-						<p>Duración 7</p>
-					</td>
-				</tr>
-			</table>
+			</header>
+			<main class="cuerpaso">
+				<table>
+					<tr>
+						<th>#</th>
+						<th>Título</th>
+						<th>Álbum</th>
+						<th>Fecha añadida</th>
+						<th>Duración</th>
+					</tr>
+					<tr>
+						<td>
+							<p class="letras">1</p>
+						</td>
+						<td class="titulo">
+							<p class="letras">Canción 1</p>
+						</td>
+						<td class="artista">
+							<p class="letras">Álbum 1</p>
+						</td>
+						<td>
+							<p class="letras">Fecha 1</p>
+						</td>
+						<td>
+							<p class="letras">Duración 1</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="letras">2</p>
+						</td>
+						<td class="titulo">
+							<p class="letras">Canción 2</p>
+						</td>
+						<td class="artista">
+							<p class="letras">Álbum 2</p>
+						</td>
+						<td>
+							<p class="letras">Fecha 2</p>
+						</td>
+						<td>
+							<p class="letras">Duración 2</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="letras">3</p>
+						</td>
+						<td class="titulo">
+							<p class="letras">Canción 3</p>
+						</td>
+						<td class="artista">
+							<p class="letras">Álbum 3</p>
+						</td>
+						<td>
+							<p class="letras">Fecha 3</p>
+						</td>
+						<td>
+							<p class="letras">Duración 3</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="letras">4</p>
+						</td>
+						<td class="titulo">
+							<p class="letras">Canción 4</p>
+						</td>
+						<td class="artista">
+							<p class="letras">Álbum 4</p>
+						</td>
+						<td>
+							<p class="letras">Fecha 4</p>
+						</td>
+						<td>
+							<p class="letras">Duración 4</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="letras">5</p>
+						</td>
+						<td class="titulo">
+							<p class="letras">Canción 5</p>
+						</td>
+						<td class="artista">
+							<p class="letras">Álbum 5</p>
+						</td>
+						<td>
+							<p class="letras">Fecha 5</p>
+						</td>
+						<td>
+							<p class="letras">Duración 5</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="letras">6</p>
+						</td>
+						<td class="titulo">
+							<p class="letras">Canción 6</p>
+						</td>
+						<td class="artista">
+							<p class="letras">Álbum 6</p>
+						</td>
+						<td>
+							<p class="letras">Fecha 6</p>
+						</td>
+						<td>
+							<p class="letras">Duración 6</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="letras">7</p>
+						</td>
+						<td class="titulo">
+							<p class="letras">Canción 7</p>
+						</td>
+						<td class="artista">
+							<p class="letras">Álbum 7</p>
+						</td>
+						<td>
+							<p class="letras">Fecha 7</p>
+						</td>
+						<td>
+							<p class="letras">Duración 7</p>
+						</td>
+					</tr>
+				</table>
 
-		</main>
-		<footer>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-			<div>
-				<p>&copy; 2023 Spotify AB</p>
-			</div>
-		</footer>
+			</main>
+			<footer class="piess">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div>
+					<p class="letras">&copy; 2023 Spotify AB</p>
+				</div>
+			</footer>
+		</div>
+
 	</body>
 
 </html>
