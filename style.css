@@ -31,7 +31,6 @@
 .contenidoPag {
     margin-left: var(--margin-sidebar);
     background-image: url(img/fondo.jpeg);
-    --margin-sidebar:24vw;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -46,7 +45,6 @@
     background-attachment: fixed;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
-    margin-left: var(--margin-sidebar);
     padding: 0;
 }
 
