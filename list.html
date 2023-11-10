@@ -6,11 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Lista Canciones</title>
 		<style>
-			* {
-				padding: 0;
-				margin: 0;
-
-			}
 
 			.letras {
 				font-size: 18px;
@@ -36,6 +31,9 @@
 				height: 700px;
 				width: 100%;
 				overflow: auto;
+				padding: 0;
+				margin: 0;
+				overflow: hidden;
 			}
 
 			table {
@@ -321,20 +319,15 @@
 						</td>
 					</tr>
 				</table>
-
+				<footer>
+					<!-- Incluir el contenido del pie de página desde otro archivo HTML -->
+					<include src="./footer.html"></include>
+					<script src="https://unpkg.com/htmlincludejs"></script>
+				</footer>
 			</main>
-			<footer class="piess">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div>
-					<p class="letras">&copy; 2023 Spotify AB</p>
-				</div>
-			</footer>
+
 		</div>
+		
 
 	</body>
 

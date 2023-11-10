@@ -448,12 +448,6 @@ ul.lista li {
 a {
     text-decoration: none; /* Elimina el subrayado predeterminado */   
     color: white;
-    transition: text-decoration 0.3s; /* Agrega una transición para suavizar el efecto */
-}
-
-/* Estilos de los enlaces al pasar el ratón sobre ellos */
-a:hover {
-    text-decoration: underline; /* Añade el subrayado cuando el ratón está encima */
 }
 
 .icons-footer img {
