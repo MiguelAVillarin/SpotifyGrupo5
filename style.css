@@ -297,7 +297,8 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    background-color: #88b7b5;
+   background-image: url(imagenes/foto.jpg);
+   background-size: 100% 100%;
 
 }
 .header-inicio {
@@ -321,7 +322,7 @@ body {
 
 .p-header {
    margin-top: 50px;
-    color: rgb(77, 74, 74);
+    color:#88b7b5;
     text-decoration: none;
 }
 
