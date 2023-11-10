@@ -289,3 +289,178 @@ body {
     text-decoration: underline;
     cursor: pointer;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body-inicio {    display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #88b7b5;
+
+}
+.header-inicio {
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.h1-header {
+    color: white;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.h1-header:hover {
+    text-decoration: underline; 
+}
+
+.p-header {
+   margin-top: 50px;
+    color: rgb(77, 74, 74);
+    text-decoration: none;
+}
+
+.p-header:hover {
+    text-decoration: underline; 
+}
+
+.h3-inicio {
+    margin: 5px;
+    color: white;
+
+}
+
+.p-inicio {
+    margin: 20px;
+    color: white;
+    text-align: center;
+}
+
+.container-group {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.img-botton {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row-reverse
+}
+
+.container {
+    margin: 10px;
+    width: 180px;
+    height: 300px;
+    background-color: #310a31;
+    border-radius: 5px;
+
+}
+
+
+.play-button img {
+    /* Ajusta el tamaño de la imagen del botón */
+    z-index: -1;
+    position: relative;
+    display: flex;
+    left: 130px;
+    background-color: #8b7e7e;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 2s;
+}
+.img-botton:hover .play-button {
+    z-index: 1;
+    transition: opacity 2S;
+    
+}
+
+
+.img img {
+    margin: 15px;
+    width: 150px;
+    height: 140px;
+    border-radius: 5px;
+    /* Define el ancho máximo de la imagen */
+}
+
+
+.string {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+/*
+///////////Parte de hoja para el footer/////////////
+*/
+
+
+.include {
+    height: 500px;
+    width: 1200px;
+}
+
+
+
+.footer-content {
+    margin: 30px;
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end; 
+
+}
+
+ul.lista {
+    list-style: none;
+    margin: 30px;
+    padding: 0;
+}
+
+ul.lista li {
+    margin: 0;
+    padding: 0;
+}
+
+.header-list {
+    color:white;
+}
+
+/* Estilos de los enlaces */
+a {
+    text-decoration: none; /* Elimina el subrayado predeterminado */   
+    color: rgb(77, 74, 74);
+    transition: text-decoration 0.3s; /* Agrega una transición para suavizar el efecto */
+}
+
+/* Estilos de los enlaces al pasar el ratón sobre ellos */
+a:hover {
+    text-decoration: underline; /* Añade el subrayado cuando el ratón está encima */
+}
+
+.icons-footer img {
+    width: 40px; /* Establece el ancho deseado */
+    height: auto; /* Esto permite que la altura se ajuste automáticamente según el ancho */
+  }
+
+.line {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #fff;
+}
+.copyright {
+    color: white;
+
+}
