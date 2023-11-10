@@ -32,6 +32,10 @@
     margin-left: var(--margin-sidebar);
     background-image: url(img/fondo.jpeg);
     --margin-sidebar:24vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
 }
 
 .podcastCuerpo {
@@ -290,11 +294,6 @@ body {
     cursor: pointer;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .body-inicio {    display: flex;
     align-content: flex-end;
     flex-wrap: wrap;
@@ -421,7 +420,12 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-end; 
+}
 
+footer{
+    background-color: var(--color-fondo);
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 ul.lista {
@@ -442,7 +446,7 @@ ul.lista li {
 /* Estilos de los enlaces */
 a {
     text-decoration: none; /* Elimina el subrayado predeterminado */   
-    color: rgb(77, 74, 74);
+    color: white;
     transition: text-decoration 0.3s; /* Agrega una transición para suavizar el efecto */
 }
 
@@ -462,5 +466,5 @@ a:hover {
 }
 .copyright {
     color: white;
-
+    margin: 0;
 }
